@@ -42,7 +42,7 @@ const CallToAction = () => {
         Join our online learning platform and gain the skills to protect yourself
         and others in the digital world.
       </CtaDescription>
-      <CtaButton href="#" className="ctabtn">Get Started for Free</CtaButton>
+      <CtaButton className="ctabtn">Get Started for Free</CtaButton>
     </CtaContainer>
   );
 };

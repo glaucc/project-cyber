@@ -194,9 +194,11 @@ body {
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 490px) {
   .ctabtn {
     font-size: 1rem !important;
     font-weight: bold;
+    max-width: 100%;
   }
 }
+
