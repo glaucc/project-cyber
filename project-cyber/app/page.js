@@ -7,6 +7,7 @@ import FeaturedPaths from "../components/FeaturedPaths";
 import Testimonials from "../components/Testimonials";
 import './globals.css';
 
+
 const fadeInUpAnimation = keyframes`
   0% {
     opacity: 0;
@@ -31,7 +32,7 @@ const NotificationH1 = styled.h1`
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size: 28px;
     padding: 15px 30px;
   }
@@ -43,8 +44,8 @@ const GapDiv = styled.div`
 
 const Home = () => {
   return (<>
-      <main>
-
+      <>
+      
       <NotificationH1>Welcome to our Online Cybersecurity Learning Platform 👋</NotificationH1>
       {/* Other content of your homepage goes here */}
       {/* <div class="gradient-element"></div> */}
@@ -54,7 +55,7 @@ const Home = () => {
       <FeaturedCourses />
       <FeaturedPaths />
       <Testimonials />
-      </main>
+      </>
   </>
   );
 };

@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -181,7 +181,7 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navitems {
     display: flex !important;
     align-items: center;
@@ -194,11 +194,27 @@ body {
 
 }
 
-@media (max-width: 490px) {
+@media only screen and (max-width: 490px) {
   .ctabtn {
     font-size: 1rem !important;
     font-weight: bold;
     max-width: 100%;
   }
+
 }
 
+.ctabtn {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .homebtn {
+    font-size: 1.7rem !important;
+    font-weight: bold;
+    max-width: 100%;
+  }
+}
+
+.homebtn {
+  font-weight: bold;
+}

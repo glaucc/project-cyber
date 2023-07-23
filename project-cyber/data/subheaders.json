@@ -1,0 +1,32 @@
+{
+    
+    "practice": [
+      "Hands-On Network Security Simulations",
+      "Web Application Security Testing: Tools and Techniques",
+      "Mastering Brute Force Attack Defense",
+      "Red Team vs. Blue Team: The Art of Ethical Hacking",
+      "Forensics Analysis and Incident Response Drills",
+      "Building and Testing Secure Web APIs"
+    ],
+
+
+    "careers": [
+        "Penetration Tester",
+        "Threat Hunter",
+        "Security Analyst",
+        "Ethical Hacker",
+        "Information Security Engineer",
+        "SOC Analyst"
+      ],
+    
+    
+    "trending": [
+        "Ransomware Attacks: Prevention and Mitigation",
+        "Zero-Day Vulnerabilities and Exploits",
+        "IoT Security: Challenges and Solutions",
+        "Cloud Security Best Practices",
+        "Artificial Intelligence in Cybersecurity",
+        "Mobile Device Security and Privacy"
+      ]
+  }
+  

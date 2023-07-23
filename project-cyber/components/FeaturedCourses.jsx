@@ -56,9 +56,10 @@ const CourseButton = styled.a`
 
   &:hover {
     background-color: #0056b3;
+    
   }
-`;
-
+  `;
+  
 const FeaturedCourses = () => {
   // Sample data for featured courses (replace with real data)
   const courses = [

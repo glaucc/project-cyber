@@ -2,10 +2,14 @@
 
 import styled, { keyframes } from "styled-components";
 import React from "react";
-import { Inter } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import '@fortawesome/fontawesome-free/css/all.css';
+
+
+import { ThemeProvider } from "../components/ThemeContext";
+
 
 // Create a GlobalStyle component to apply the Inter font globally
 const GlobalStyle = createGlobalStyle`
@@ -30,7 +34,9 @@ const ContentContainer = styled.div`
 
 const RootLayout = ({ children }) => (
     <html lang="en">
+
       <body >
+      <ThemeProvider>
         
         <GlobalStyle />
         <Navbar />
@@ -41,6 +47,7 @@ const RootLayout = ({ children }) => (
 
         <Footer />
         
+      </ThemeProvider>
         </body>
     </html>
   )
