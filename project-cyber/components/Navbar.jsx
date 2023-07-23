@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
-import { useTheme, lightTheme, darkTheme } from "../components/ThemeContext";
+import {useTheme, lightTheme, darkTheme}  from "../components/ThemeContext";
+
 import '../styles/navbar.css';
 
 // Styled component for the logo image
@@ -11,11 +12,16 @@ margin-right: 10px; /* Add some spacing between the logo and the "Home" button *
 `;
 
 const Navbar = () => {
+
   const { theme, toggleDarkMode } = useTheme();
+  // console.log(theme)
 
   const handleDarkModeToggle = () => {
     console.log("it's working");
     toggleDarkMode();
+    console.log(theme)
+
+
   };
 
   return (

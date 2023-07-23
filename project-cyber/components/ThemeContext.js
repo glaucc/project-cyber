@@ -2,15 +2,15 @@
 
 import React, { createContext, useState, useContext } from "react";
 
-const ThemeContext = createContext();
+const ThemeContext = createContext('light');
 
-const lightTheme = {
+export const lightTheme = {
   backgroundColor: "#fff",
   textColor: "#333",
   linkHoverColor: "#555",
 };
 
-const darkTheme = {
+export const darkTheme = {
   backgroundColor: "#222",
   textColor: "#fff",
   linkHoverColor: "#ddd",

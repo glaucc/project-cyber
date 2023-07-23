@@ -217,7 +217,7 @@ const Footer = () => {
 
           <FooterText>Bruto Cybersecurity Learning Platform.</FooterText>
           <FooterText>
-            Developed with <span style={{ color: "#e74c3c" }}>&hearts;</span> by{" "}
+            Developed with <span style={{ color: "#e74c3c" }}>&hearts;</span> by{""}
             <FooterLink href="https://www.yourwebsite.com" target="_blank">
             Bruto
             </FooterLink>
