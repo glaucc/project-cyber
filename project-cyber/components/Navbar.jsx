@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" style={theme}>
       {/* Logo */}
       <Link href="/">
         <a>

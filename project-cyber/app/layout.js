@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
-import { ThemeProvider } from "../components/ThemeContext";
+import { ThemeProvider, useTheme, darkTheme } from "../components/ThemeContext";
 
 
 // Create a GlobalStyle component to apply the Inter font globally
@@ -18,11 +18,26 @@ const GlobalStyle = createGlobalStyle`
   /* Other global styles or CSS resets can go here */
 
   /* Apply the Inter font to the body element */
+  
   body {
     font-family: 'Inter', sans-serif;
+  
   }
-  `;
 
+  a {
+    color: ${(props) => props.theme.textColor};
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: ${(props) => props.theme.linkHoverColor};
+  }
+
+  `;
+  // background-color: ${(props) => props.theme.backgroundColor};
+  // color: ${(props) => props.theme.textColor};
+
+  
 const ContentContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -32,25 +47,27 @@ const ContentContainer = styled.div`
 // const inter = Inter({ subsets: ['latin'] })
 // className={inter.className}
 
-const RootLayout = ({ children }) => (
+const RootLayout = ({ children }) => {
+  console.log(2)
+
+  const { theme } = useTheme();
+  console.log(3)
+
+  return (
     <html lang="en">
-
-      <body >
-      <ThemeProvider>
-        
-        <GlobalStyle />
-        <Navbar />
-        
-        <ContentContainer>
-          {children}
-        </ContentContainer>
-
-        <Footer />
-        
-      </ThemeProvider>
-        </body>
+      <body>
+        <ThemeProvider style={theme}>
+          <GlobalStyle />
+          <Navbar />
+          <ContentContainer>
+            {children}
+          </ContentContainer>
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
-  )
+  );
+};
 
 
 export default RootLayout;
