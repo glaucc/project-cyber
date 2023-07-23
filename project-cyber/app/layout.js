@@ -24,16 +24,16 @@ const GlobalStyle = createGlobalStyle`
   
   }
 
-  a {
-    color: ${(props) => props.theme.textColor};
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: ${(props) => props.theme.linkHoverColor};
-  }
-
+  
   `;
+  // a {
+  //   color: ${(props) => props.theme.textColor};
+  //   text-decoration: none;
+  // }
+
+  // a:hover {
+  //   color: ${(props) => props.theme.linkHoverColor};
+  // }
   // background-color: ${(props) => props.theme.backgroundColor};
   // color: ${(props) => props.theme.textColor};
 
