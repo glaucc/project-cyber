@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="nav-item navitemss">Sign Up</div>
         </Link>
         <div className="nav-item navitemss" onClick={handleDarkModeToggle}>
-          {theme === lightTheme ? "Dark Mode" : "Light Mode"}
+          {theme === lightTheme ? "Light Mode" : "Dark Mode"}
         </div>
       </div>
     </div>
