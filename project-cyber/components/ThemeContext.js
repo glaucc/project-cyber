@@ -5,14 +5,14 @@ import React, { createContext, useState, useContext } from "react";
 const ThemeContext = createContext();
 
 const lightTheme = {
-  backgroundColor: "#f8f8f8",
+  backgroundColor: "#fff",
   textColor: "#333",
   linkHoverColor: "#555",
 };
 
 const darkTheme = {
   backgroundColor: "#222",
-  textColor: "#f8f8f8",
+  textColor: "#fff",
   linkHoverColor: "#ddd",
 };
 

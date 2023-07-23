@@ -4,46 +4,11 @@ import styled from "styled-components";
 import { useTheme, lightTheme, darkTheme } from "../components/ThemeContext";
 import '../styles/navbar.css';
 
-// const NavbarContainer = styled.div`
-//   background-color: ${(props) => props.theme.backgroundColor};
-//   padding: 20px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   cursor: default;
-
-//   @media only screen and (max-width: 768px) {
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-
-//   @media only screen and (max-width: 425px) {
-//     max-width: 100vw;
-//   }
-// `;
-
-// const NavItems = styled.div`
-//   align-items: center;
-
-//   @media only screen and (max-width: 768px) {
-//     margin-top: 10px;
-//   }
-// `;
-
-// const NavItem = styled.a`
-//   color: ${(props) => props.theme.textColor};
-//   font-size: 16px;
-//   margin: 0 10px;
-//   text-decoration: none;
-//   padding: 10px;
-//   border-radius: 5px;
-//   transition: background-color 0.3s ease;
-//   cursor: pointer;
-
-//   &:hover {
-//     background-color: ${(props) => props.theme.linkHoverColor};
-//   }
-// `;
+// Styled component for the logo image
+const LogoImage = styled.img`
+margin-right: 10px; /* Add some spacing between the logo and the "Home" button */
+// height: 40px; /* Adjust the height as needed */
+`;
 
 const Navbar = () => {
   const { theme, toggleDarkMode } = useTheme();
@@ -55,9 +20,19 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
+      {/* Logo */}
+      <Link href="/">
+        <a>
+          <LogoImage src="/path-to-your-logo-image.png" alt="Logo" />
+        </a>
+      </Link>
+
+      {/* Home Button */}
       <Link href="/">
         <div className="homebtn nav-item">Home</div>
       </Link>
+
+      {/* Rest of the navigation items */}
       <div className="nav-items">
         <Link href="/learn">
           <div className="nav-item navitemss">Learn</div>

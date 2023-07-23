@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CoursesContainer = styled.div`
-  background-color: #f8f8f8;
+  background-color: #fff;
   padding: 40px;
   text-align: center;
 `;
