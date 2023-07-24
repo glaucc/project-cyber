@@ -1,0 +1,88 @@
+
+{
+    "step1": [
+      "Introduction to Cybersecurity",
+      "Cyber Threats and Attacks",
+      "Phishing Awareness",
+      "Malware Protection",
+      "Password Management"
+    ],
+    "step2": [
+      "Network Security Basics",
+      "Data Encryption",
+      "Secure Coding Practices",
+      "Social Engineering",
+      "Incident Response"
+    ],
+    "step3": [
+      "Vulnerability Assessment",
+      "Firewall Configuration",
+      "Wireless Security",
+      "Identity and Access Management",
+      "Security Policies and Procedures"
+    ],
+    "step4": [
+      "Cloud Security",
+      "Web Application Security",
+      "Mobile Device Security",
+      "IoT Security",
+      "Blockchain Security"
+    ],
+    "step5": [
+      "Digital Forensics",
+      "Network Monitoring and Analysis",
+      "Endpoint Security",
+      "Cryptography",
+      "Physical Security"
+    ],
+    "step6": [
+      "Security Awareness Training",
+      "Security Governance",
+      "Ethical Hacking",
+      "Penetration Testing",
+      "Risk Assessment"
+    ],
+    "step7": [
+      "Cybersecurity Frameworks",
+      "Cybersecurity Best Practices",
+      "Cybersecurity Laws and Regulations",
+      "Privacy and Data Protection",
+      "Application Security Testing"
+    ],
+    "step8": [
+      "Threat Intelligence",
+      "Cybersecurity Incident Handling",
+      "Security Operations Center (SOC)",
+      "Network Segmentation",
+      "Security Information and Event Management (SIEM)"
+    ],
+    "step9": [
+      "Multi-Factor Authentication (MFA)",
+      "Security Assessment and Auditing",
+      "Security Awareness for Remote Work",
+      "Cloud Security Controls",
+      "Security Automation"
+    ],
+    "step10": [
+      "Security in DevOps",
+      "Machine Learning for Cybersecurity",
+      "Data Breach Prevention",
+      "Mobile Application Security",
+      "Security Monitoring and Analysis"
+    ],
+    "step11": [
+      "Zero Trust Architecture",
+      "Phishing Prevention Techniques",
+      "Ransomware Protection",
+      "Supply Chain Security",
+      "Threat Hunting"
+    ],
+    "step12": [
+      "Cybersecurity Career Path",
+      "Security Certifications",
+      "Incident Response Plan",
+      "Data Loss Prevention",
+      "Insider Threat Detection"
+    ]
+  }
+  
