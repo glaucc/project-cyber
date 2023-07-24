@@ -1,8 +1,10 @@
 import React from "react";
+import Image from 'next/image'
+
 import Link from "next/link";
 import styled from "styled-components";
 import {useTheme, lightTheme, darkTheme}  from "../components/ThemeContext";
-
+import Logo from '../public/bruto.jpg';
 import '../styles/navbar.css';
 
 // Styled component for the logo image
@@ -27,11 +29,18 @@ const Navbar = () => {
   return (
     <div className="navbar-container" style={theme}>
       {/* Logo */}
-      <Link href="/">
-        <a>
-          <LogoImage src='../public/bruto.jpg' alt="Logo" />
-        </a>
-      </Link>
+      
+      <Link href='/' className='flex gap-2 flex-center'>
+        <Image
+          src={Logo}
+          alt='logo'
+          width={80}
+          height={80}
+          className='object-contain'
+        />
+        </Link>
+          
+        
 
       {/* Home Button */}
       <Link href="/">

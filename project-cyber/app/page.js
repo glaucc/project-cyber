@@ -5,7 +5,7 @@ import FeaturedCourses from "@/components/FeaturedCourses";
 import CallToAction from "../components/CallToAction";
 import FeaturedPaths from "../components/FeaturedPaths";
 import Testimonials from "../components/Testimonials";
-import './globals.css';
+import './globals.scss';
 
 
 const fadeInUpAnimation = keyframes`

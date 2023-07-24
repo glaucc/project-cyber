@@ -6,7 +6,7 @@ import { createGlobalStyle } from "styled-components";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
-
+import './globals.scss'
 
 import { ThemeProvider, useTheme, darkTheme } from "../components/ThemeContext";
 
