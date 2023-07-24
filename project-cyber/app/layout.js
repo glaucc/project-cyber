@@ -21,21 +21,34 @@ padding: 20px;
 `;
 
 
+const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
+/* Other global styles or CSS resets can go here */
 
-// background-color: ${(props) => props.theme.backgroundColor};
-// color: ${(props) => props.theme.textColor};
+/* Apply the Inter font to the body element */
 
+body {
+  font-family: 'Inter', sans-serif;
+  `;
+  
+  // background-color: ${(props) => props.theme.backgroundColor};
+  // color: ${(props) => props.theme.textColor};
+  
+  // a {
+  // color: ${(props) => props.theme.textColor};
+  // text-decoration: none;
+  // }
+  
+  // a:hover {
+  // color: ${(props) => props.theme.linkHoverColor};
+  // }
+  
+  
 // }
 
-// a {
-// color: ${(props) => props.theme.textColor};
-// text-decoration: none;
-// }
 
-// a:hover {
-// color: ${(props) => props.theme.linkHoverColor};
-// }
+
 // const inter = Inter({ subsets: ['latin'] })
 // className={inter.className}
 
@@ -45,26 +58,15 @@ padding: 20px;
 const RootLayout = ({ children }) => {
   console.log(2)
 
-
+  
   const { theme } = useTheme();
-// Create a GlobalStyle component to apply the Inter font globally
-const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
-  /* Other global styles or CSS resets can go here */
-
-  /* Apply the Inter font to the body element */
-  
-  body {
-    font-family: 'Inter', sans-serif;
-  
-  `;
-
-
-  console.log(3)
-
-  return (
-    <html lang="en">
+  // Create a GlobalStyle component to apply the Inter font globally
+    
+    
+    console.log(3)
+    
+    return (
+      <html lang="en">
       <body>
         <ThemeProvider style={theme}>
           <GlobalStyle />

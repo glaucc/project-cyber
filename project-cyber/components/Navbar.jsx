@@ -29,7 +29,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link href="/">
         <a>
-          <LogoImage src="/path-to-your-logo-image.png" alt="Logo" />
+          <LogoImage src='../public/bruto.jpg' alt="Logo" />
         </a>
       </Link>
 

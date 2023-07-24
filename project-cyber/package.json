@@ -12,16 +12,22 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "autoprefixer": "10.4.14",
     "cookies-next": "^2.1.2",
+    "fontawesome": "^5.6.3",
     "next": "13.4.11",
     "next-themes": "^0.2.1",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "scss": "^0.2.4",
     "styled-components": "^6.0.5"
   },
   "devDependencies": {
+    "sass": "^1.64.1",
     "tailwindcss": "^3.3.3"
   }
 }

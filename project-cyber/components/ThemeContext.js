@@ -7,12 +7,12 @@ const ThemeContext = createContext('light');
 
 export const lightTheme = {
   backgroundColor: "#fff",
-  textColor: "#333",
+  textColor: "#000000",
   linkHoverColor: "#555",
 };
 
 export const darkTheme = {
-  backgroundColor: "#222",
+  backgroundColor: "black",
   textColor: "#fff",
   linkHoverColor: "#ddd",
 };
