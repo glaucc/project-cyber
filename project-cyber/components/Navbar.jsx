@@ -30,13 +30,13 @@ const Navbar = () => {
     <div className="navbar-container" style={theme}>
       {/* Logo */}
       
-      <Link href='/' className='flex gap-2 flex-center'>
+      <Link href='/' className='logoIcon flex gap-2 flex-center'>
         <Image
           src={Logo}
           alt='logo'
-          width={80}
-          height={80}
-          className='object-contain'
+          width={70}
+          height={70}
+          className='logoIcon object-contain'
         />
         </Link>
           
