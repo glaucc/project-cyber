@@ -1,15 +1,12 @@
 // learn.js
 'use client';
 
-import React from "react";
-import CybersecurityTopics from "../../components/CybersecurityTopics";
+import dynamic from "next/dynamic";
 
-const LearnPage = () => {
-  return (
-    <div>
-      <CybersecurityTopics />
-    </div>
-  );
-};
+
+const LearnPage = dynamic(
+  () => import('../../components/CybersecurityTopics'),
+  { ssr: false }
+)
 
 export default LearnPage;

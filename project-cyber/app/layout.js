@@ -14,11 +14,11 @@ import { ThemeProvider, useTheme, darkTheme } from "../components/ThemeContext";
 
 
   
-const ContentContainer = styled.div`
-max-width: 1200px;
-margin: 0 auto;
-padding: 20px;
-`;
+// const ContentContainer = styled.div`
+// max-width: 1200px;
+// padding: 20px;
+// `;
+// margin: 0 auto;
 
 
 const GlobalStyle = createGlobalStyle`
@@ -64,16 +64,19 @@ const RootLayout = ({ children }) => {
     
     
     console.log(3)
-    
+    // style={{scrollBehavior:'smooth'}
     return (
-      <html lang="en">
+    <html lang="en">
       <body>
         <ThemeProvider style={theme}>
           <GlobalStyle />
           <Navbar />
-          <ContentContainer>
+          {/* <ContentContainer> */}
+          <div className="ContentContainer">
             {children}
-          </ContentContainer>
+
+          </div>
+          {/* </ContentContainer> */}
           <Footer />
         </ThemeProvider>
       </body>
