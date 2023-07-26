@@ -5,13 +5,10 @@
 
 
 
-// ConfirmationPopup.js
-
 import React, { useEffect } from "react";
 import styles from "../styles/ConfirmationPopup.module.scss";
-import svg from '../public/boy-w-basketball.svg';
+import boySvg from '../public/boy-w-basketball.svg';
 import Image from "next/image";
-
 
 const ConfirmationPopup = ({ onClose }) => {
   useEffect(() => {
@@ -28,11 +25,12 @@ const ConfirmationPopup = ({ onClose }) => {
         <div className={styles["icon-container"]}>
           {/* Your first SVG icon goes here */}
         </div>
-        <p>Reset password link has been sent to your email.</p>
-        <div className={styles["creative-icon-container"]}>
+        <p className="popup-text" style={{ fontWeight: 'bold' }}>Reset password link has been sent to your email</p>
+        <div className={styles["creative-icon-container"]} className='postsvg'>
           {/* Your creative SVG icon goes here */}
-          <Image src={svg} height={400} width={400} className="boy-svg" />
-
+          <object width={400} height={400} type="image/svg+xml" data="https://cdn.svgator.com/images/2023/03/message-delivered-to-mailbox-animation.svg" alt="Animated mail that flies and arrives at the mailbox" img width="100%">
+<img  src="https://cdn.svgator.com/images/2023/03/message-delivered-to-mailbox-animation.svg" alt="Animated mail that flies and arrives at the mailbox"/>    
+</object>
         </div>
         <button className={styles["close-button"]} onClick={onClose}>
           {/* Your "X" icon SVG */}
