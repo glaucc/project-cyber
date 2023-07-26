@@ -44,7 +44,7 @@ const LearnPage = () => {
   return (
     <>
       <div className="quote-header">
-        <h1>Cybersecurity Fundamentals for Beginners</h1>
+        {/* <h1>Cybersecurity Fundamentals for Beginners</h1> */}
         <p>{getRandomQuote().quote}</p>
         <p>- {getRandomQuote().author}</p>
       </div>
