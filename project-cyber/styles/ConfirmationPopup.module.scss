@@ -1,0 +1,81 @@
+/* ConfirmationPopup.module.scss */
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.25rem);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    width: 37.5rem; /* 600px */
+    height: 28rem; /* 400px */
+    padding: 1.5rem; /* 24px */
+    background-color: #fff;
+    border-radius: 0.5rem; /* 8px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+  }
+  
+  .icon-container {
+    margin-bottom: 1rem; /* 16px */
+  }
+  
+  .icon {
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
+    border-radius: 50%;
+    background-color: #28a745; /* Green color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdown-container {
+    margin-bottom: 1rem; /* 16px */
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .close-button {
+    position: absolute; /* Add position: absolute */
+    margin-top: 31rem;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    background-color: #35baf6;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+  }
+  
+  .close-button:hover {
+    background-color: #2196f3;
+  }
+  
+  .close-text {
+    margin-left: 0.5rem; /* 8px */
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+  }
+  
+  .boy-svg {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
