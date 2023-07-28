@@ -58,14 +58,17 @@ const Navbar = () => {
         <Link href="/paths">
           <div className="nav-item navitemss">Paths</div>
         </Link>
+        <Link href="/learn/content/career-quiz">
+          <div className="nav-item navitemss">Career Quiz</div>
+        </Link>
         <Link href="/login">
           <div className="nav-item navitemss">Login</div>
         </Link>
         <Link href="/signup">
           <div className="nav-item navitemss">Sign Up</div>
         </Link>
-        <div className="nav-item navitemss" onClick={handleDarkModeToggle}>
-          {theme === lightTheme ? "Light Mode" : "Dark Mode"}
+        <div className="nav-item navitemss">
+          Language
         </div>
       </div>
     </div>

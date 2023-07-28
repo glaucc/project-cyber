@@ -1,0 +1,51 @@
+/* callToAction.css */
+
+/* Styles for CtaContainer */
+.CtaContainer {
+    background-color: #007bff;
+    color: #fff;
+    // padding: 80px;
+    text-align: center;
+  }
+  
+
+
+  /* Styles for CtaTitle */
+  .CtaTitle {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for CtaDescription */
+  .CtaDescription {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Styles for CtaButton */
+  .ctabtn {
+    color: #fff;
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #fff; /* Add a 2px white border to the button */
+  }
+  
+  .ctabtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query for CtaButton */
+//   @media only screen and (max-width: 425px) {
+//     .CtaContainer {
+    
+//         padding: 60px;
+        
+//     }
+//   }
+  
+

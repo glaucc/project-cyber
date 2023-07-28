@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import "../styles/CallToAction.scss"; // Import the CSS file
+
+
 
 const CtaContainer = styled.div`
   background-color: #007bff;
@@ -31,6 +34,12 @@ const CtaButton = styled.a`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media only screen and (max-width: 425px) {
+    ctabutton {
+      max-width: 100vw;
+    }
   }
 `;
 
