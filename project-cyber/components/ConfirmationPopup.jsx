@@ -7,7 +7,6 @@
 
 import React, { useEffect } from "react";
 import styles from "../styles/ConfirmationPopup.module.scss";
-import boySvg from '../public/boy-w-basketball.svg';
 import Image from "next/image";
 
 const ConfirmationPopup = ({ onClose }) => {
