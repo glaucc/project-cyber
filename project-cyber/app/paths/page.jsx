@@ -1,5 +1,6 @@
-import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
+
 
 import styles from "../../styles/Paths.module.scss";
 import beginner from '../../public/path-images/egyptian-using-computer.PNG'
@@ -19,85 +20,102 @@ const Paths = () => {
     {
       title: "Beginner",
       image: beginner,
+      link: '/learn/content/beginner',
       description:
         "This path is for individuals who are new to the field of cybersecurity and want to explore the basics of various domains.",
     },
     {
       title: "Pre Security",
       image: presecurity,
+      link: '/learn/content/beginner',
       description:
         "Pre Security path is designed for those who want to learn about securing systems and networks.",
     },
     {
       title: "Junior Pentester",
       image: pentester,
+      link: '/learn/content/beginner',
       description:
         "Junior Pentester path is for aspiring penetration testers who want to learn ethical hacking and security assessment techniques.",
     },
     {
       title: "Offensive Pentesting",
       image: pentesting,
+      link: '/learn/content/beginner',
       description:
         "This path focuses on advanced offensive security techniques and penetration testing methodologies.",
     },
     {
       title: "Red Teaming",
       image: redteaming,
+      link: '/learn/content/beginner',
       description:
         "Red Teaming path is for cybersecurity professionals who want to simulate real-world cyber attacks and improve defenses.",
     },
     {
       title: "SOC Level 1",
       image: soc,
+      link: '/learn/content/beginner',
       description:
         "SOC Level 1 path is designed for individuals who want to start a career in Security Operations Centers (SOCs).",
     },
     {
       title: "Cyber Defense",
       image: cyberdefense,
+      link: '/learn/content/beginner',
       description:
         "Cyber Defense path focuses on building strong defenses and incident response skills to protect against cyber threats.",
     },
     {
       title: "Web Fundamentals",
       image: web,
+      link: '/learn/content/beginner',
       description:
         "Web Fundamentals path is for those interested in web application security and secure web development.",
     },
     {
       title: "Bug Bounty",
       image: bugbounty,
+      link: '/learn/content/beginner',
       description:
         "Bug Bounty path is for cybersecurity enthusiasts who want to discover and report vulnerabilities in systems for rewards.",
     },
     {
       title: "Digital Forensics",
       image: forensics,
+      link: '/learn/content/beginner',
       description:
         "Digital Forensics path is for professionals who want to investigate and analyze digital evidence for legal and investigative purposes.",
     },
   ];
 
   return (
+  
+  <>
+    
     <div className={styles["paths-container"]}>
       <h1 className={styles["paths-title"]}>Career Paths in Cyber Security</h1>
       <div className={styles["paths-grid"]}>
         {paths.map((path, index) => (
-          <div key={index} className={styles["path-card"]}>
-            <div className={styles["path-image-container"]}>
-              <Image
-                src={path.image}
-                alt={path.title}
-                width={200} // Adjust the width and height as per your design requirements
-                height={200}
-              />
+          <Link href={path.link}  key={index}>
+            <div key={index} className={styles["path-card"]}>
+              <div className={styles["path-image-container"]}>
+                <Image
+                  src={path.image}
+                  alt={path.title}
+                  width={200} // Adjust the width and height as per your design requirements
+                  height={200}
+                  />
+              </div>
+              <h2 className={styles["path-title"]}>{path.title}</h2>
+              <p className={styles["path-description"]}>{path.description}</p>
             </div>
-            <h2 className={styles["path-title"]}>{path.title}</h2>
-            <p className={styles["path-description"]}>{path.description}</p>
-          </div>
+          </Link>
         ))}
       </div>
+    
     </div>
+  </>
   );
 };
 

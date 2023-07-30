@@ -1,0 +1,24 @@
+.container {
+    padding: 20px;
+  }
+  
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .link {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    background-color: #f0f0f0;
+  }
+  
