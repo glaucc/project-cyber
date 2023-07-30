@@ -43,50 +43,48 @@ const LearnPage = () => {
 
   return (
     <>
+    <div className="learn-container">
+
       <div className="quote-header">
         {/* <h1>Cybersecurity Fundamentals for Beginners</h1> */}
         <p>{getRandomQuote().quote}</p>
         <p>- {getRandomQuote().author}</p>
       </div>
 
-      <div className="dropdown">
-        <button className="dropbtn">Select Step</button>
-        <div className="dropdown-content">
-          {Object.keys(topicsData).map((step) => (
-            <a key={step} href={`#${step}`}>
-              {step}
-            </a>
-          ))}
-        </div>
-      </div>
+      
 
       <div className="content-learn">
         {Object.entries(topicsData).map(([step, topics]) => (
           <div key={step}>
-            <h2 id={step}>Step {step.slice(4)}</h2>
+            <div className="topic-container">
+          
             {topics.map((topic) => (
               <TopicContainer
-                key={topic}
-                onClick={() => toggleTopic(topic)}
-                style={{
-                  backgroundColor: checkedTopics.includes(topic)
-                    ? "#e6ffe6"
-                    : "inherit",
-                }}
+              className="topics-container"
+              key={topic}
+              onClick={() => toggleTopic(topic)}
+              style={{
+                backgroundColor: checkedTopics.includes(topic)
+                ? "#e6ffe6"
+                : "inherit",
+              }}
               >
                 <input
                   type="checkbox"
                   checked={checkedTopics.includes(topic)}
                   onChange={() => toggleTopic(topic)}
-                />
+                  />
                 <label>{topic}</label>
               </TopicContainer>
             ))}
+            
+            </div>
           </div>
         ))}
       </div>
+    </div>
     </>
-  );
+    );
 };
 
 export default LearnPage;
