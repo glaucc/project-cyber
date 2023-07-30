@@ -50,6 +50,8 @@
 
 .navitemss {
   cursor: pointer;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .logoIcon {

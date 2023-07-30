@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import topicsData from "../data/learn.json";
 import quotesData from "../data/quotes.json";
+import Link from "next/link";
 
-// import { Link, animateScroll as scroll } from "react-scroll";
-{/* <Link key={step} to={`#${step}`}> */}
 
 
 import "../styles/learn.scss";
@@ -57,7 +56,7 @@ const LearnPage = () => {
         {Object.entries(topicsData).map(([step, topics]) => (
           <div key={step}>
             <div className="topic-container">
-          
+
             {topics.map((topic) => (
               <TopicContainer
               className="topics-container"
@@ -82,6 +81,13 @@ const LearnPage = () => {
           </div>
         ))}
       </div>
+
+      <Link href="/paths">
+        <div className="learn-btn-container">
+          <span>Browse Career Paths</span>
+        </div>
+      </Link>
+
     </div>
     </>
     );
