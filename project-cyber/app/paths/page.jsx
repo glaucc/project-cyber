@@ -25,65 +25,67 @@ const Paths = () => {
         "This path is for individuals who are new to the field of cybersecurity and want to explore the basics of various domains.",
     },
     {
-      title: "Pre Security",
-      image: presecurity,
-      link: '/learn/content/beginner',
+      title: "Web Fundamentals",
+      image: web,
+      link: '/learn/content/web',
       description:
-        "Pre Security path is designed for those who want to learn about securing systems and networks.",
+        "Web Fundamentals path is for those interested in web application security and secure web development.",
     },
+    
     {
       title: "Junior Pentester",
       image: pentester,
-      link: '/learn/content/beginner',
+      link: '/learn/content/jnrpentester',
       description:
         "Junior Pentester path is for aspiring penetration testers who want to learn ethical hacking and security assessment techniques.",
     },
     {
+      title: "Network Security",
+      image: presecurity,
+      link: '/learn/content/netsecurity',
+      description:
+        "The Network Security path is designed for individuals interested in securing and protecting computer networks from potential threats and cyber-attacks.",
+    },
+    {
       title: "Offensive Pentesting",
       image: pentesting,
-      link: '/learn/content/beginner',
+      link: '/learn/content/offensivepentesting',
       description:
         "This path focuses on advanced offensive security techniques and penetration testing methodologies.",
     },
     {
       title: "Red Teaming",
       image: redteaming,
-      link: '/learn/content/beginner',
+      link: '/learn/content/redteaming',
       description:
         "Red Teaming path is for cybersecurity professionals who want to simulate real-world cyber attacks and improve defenses.",
     },
     {
       title: "SOC Level 1",
       image: soc,
-      link: '/learn/content/beginner',
+      link: '/learn/content/soc1',
       description:
         "SOC Level 1 path is designed for individuals who want to start a career in Security Operations Centers (SOCs).",
     },
     {
       title: "Cyber Defense",
       image: cyberdefense,
-      link: '/learn/content/beginner',
+      link: '/learn/content/cyberdefense',
       description:
         "Cyber Defense path focuses on building strong defenses and incident response skills to protect against cyber threats.",
     },
-    {
-      title: "Web Fundamentals",
-      image: web,
-      link: '/learn/content/beginner',
-      description:
-        "Web Fundamentals path is for those interested in web application security and secure web development.",
-    },
+    
     {
       title: "Bug Bounty",
       image: bugbounty,
-      link: '/learn/content/beginner',
+      link: '/learn/content/bugbounty',
       description:
         "Bug Bounty path is for cybersecurity enthusiasts who want to discover and report vulnerabilities in systems for rewards.",
     },
     {
       title: "Digital Forensics",
       image: forensics,
-      link: '/learn/content/beginner',
+      link: '/learn/content/digitalforensics',
       description:
         "Digital Forensics path is for professionals who want to investigate and analyze digital evidence for legal and investigative purposes.",
     },

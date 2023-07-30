@@ -55,9 +55,6 @@ const Navbar = () => {
         <Link href="/practice">
           <div className="nav-item navitemss">Practice</div>
         </Link>
-        <Link href="/paths">
-          <div className="nav-item navitemss">Paths</div>
-        </Link>
         <Link href="/learn/content/career-quiz">
           <div className="nav-item navitemss">Career Quiz</div>
         </Link>
