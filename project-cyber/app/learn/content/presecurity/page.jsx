@@ -4,7 +4,7 @@ import styles from './Beginner.module.css';
 const Beginner = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.beginnerHeader}>Network Security Path</h1>
+      <h1 className={styles.beginnerHeader}>Pre Security Path</h1>
       <div className={styles.links}>
         {/* Clickable elements */}
         <Link href="/paths/content/beginner/pre-security">

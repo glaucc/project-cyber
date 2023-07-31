@@ -64,18 +64,18 @@ const FeaturedPaths = () => {
   const featuredPaths = [
     {
       id: 1,
-      title: "Cybersecurity Fundamentals Path",
-      description: "Learn the basics of cybersecurity and essential security principles.",
+      title: "Offensive Pentesting",
+      description: "This path focuses on advanced offensive security techniques and penetration testing methodologies.",
     },
     {
       id: 2,
-      title: "Penetration Testing Path",
-      description: "Master the art of ethical hacking and penetration testing.",
+      title: "Cyber Defense",
+      description: "Cyber Defense path focuses on building strong defenses and incident response skills to protect against cyber threats.",
     },
     {
       id: 3,
-      title: "Network Security Path",
-      description: "Discover the key aspects of securing computer networks.",
+      title: "Red Teaming",
+      description: "Red Teaming path is for cybersecurity professionals who want to simulate real-world cyber attacks and improve defenses.",
     },
   ];
 

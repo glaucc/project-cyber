@@ -40,11 +40,11 @@ const Paths = () => {
         "Junior Pentester path is for aspiring penetration testers who want to learn ethical hacking and security assessment techniques.",
     },
     {
-      title: "Network Security",
+      title: "Pre Security",
       image: presecurity,
-      link: '/learn/content/netsecurity',
+      link: '/learn/content/presecurity',
       description:
-        "The Network Security path is designed for individuals interested in securing and protecting computer networks from potential threats and cyber-attacks.",
+        "Pre Security path is designed for those who want to learn about securing systems and networks.",
     },
     {
       title: "Offensive Pentesting",

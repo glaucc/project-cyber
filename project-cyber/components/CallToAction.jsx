@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "../styles/CallToAction.scss"; // Import the CSS file
+import Link from 'next/link';
 
 
 
@@ -51,7 +52,9 @@ const CallToAction = () => {
         Join our online learning platform and gain the skills to protect yourself
         and others in the digital world.
       </CtaDescription>
+      <Link href='/signup'>
       <CtaButton className="ctabtn">Get Started for Free</CtaButton>
+      </Link>
     </CtaContainer>
   );
 };
