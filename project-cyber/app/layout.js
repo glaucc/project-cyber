@@ -22,15 +22,16 @@ import { ThemeProvider, useTheme, darkTheme } from "../components/ThemeContext";
 
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
 
 /* Other global styles or CSS resets can go here */
 
 /* Apply the Inter font to the body element */
 
 body {
-  font-family: 'Inter', sans-serif;
-  `;
+  font-family: 'Inconsolata', monospace;  
+`;
   
   // background-color: ${(props) => props.theme.backgroundColor};
   // color: ${(props) => props.theme.textColor};

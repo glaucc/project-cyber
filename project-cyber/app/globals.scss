@@ -31,13 +31,15 @@ html {
 }
 
 /* globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
 /* Other global styles or CSS resets can go here */
 
 /* Apply the Inter font to the body element or specific elements */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 
@@ -109,7 +111,7 @@ td {
 
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   line-height: 1.6;
   min-width: 60vw;
   max-width: 100%;
@@ -195,7 +197,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   background-color: #fff;
   justify-content: space-between;
   min-height: 100vw;
