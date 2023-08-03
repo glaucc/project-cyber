@@ -99,7 +99,7 @@
               Let's say you've downloaded a JPEG image from a remote server. You suspect that there's something hidden inside it, but how can you get it out?
   How about we start by searching for “hiding things inside images” in Google:
               </p><br />
-              <Image src={search} width={771} height={476}></Image>
+              <Image src={search} width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br /> 
               <p>
               Notice that the second link down gives us the title of a technique: “Steganography”. You can then click that link and read the document, which will teach you how files are hidden inside images.
@@ -108,34 +108,34 @@
               <p>
               Ok, so we know how it's done, let's try searching for a way to extract files using steganography:
               </p><br />
-              <Image src={search2} width={771} height={476}></Image>
+              <Image src={search2} width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>
               Already virtually every link is pointing to something useful. The first link contains a collection of useful tools, the second is more instructions on how to perform steganography in the first place. Realistically any of these links could prove useful, but let's take a look at that first one <a target="_blank" href='https://0xrick.github.io/lists/stego/'>(https://0xrick.github.io/lists/stego/)</a>:
 
               </p>
               <br />
-              <Image src={search3} width={850} height={400}></Image>
+              <Image src={search3} width={850} height={400} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <p>
               The very first tool there looks to be useful. It can be used to extract embedded data from JPEG files -- exactly what we need it to do! This page also tells you that steghide can be installed using something called “apt”.
               </p><p>Let's search that up next!</p>
               <br />
-              <Image src={search4} width={750} height={550}></Image>
+              <Image src={search4} width={750} height={550} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>Great -- so apt is a package manager that lets us install tools on Linux distributions like Ubuntu (or Kali!).</p><p>
   How can we install packages using apt? Let's search it!</p>
               <br />
-              <Image src={search5}></Image>
+              <Image src={search5} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>Perfect -- right at the top of the page we're given instructions. We know that our package is called steghide, so we can go ahead and install that:
   </p>
   <br></br>
-              <Image src={command}></Image>
+              <Image src={command} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br></br>
               <p>Now, let's switch back to that collection of steganography tools we were looking at before. Did you notice that there were instructions on how to use steghide right there?
   </p>
     `         <br></br>
-              <Image src={command2}></Image>
+              <Image src={command2} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br></br>
 
   <p>There we go! That's how we can extract an image from a file. Our research has paid off and we can now go and complete the task.
