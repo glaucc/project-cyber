@@ -28,7 +28,7 @@ const Learning = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Introduction</title>
+        <title>Learning Page</title>
         <meta name="description" content="Learning Page for Learners" />
       </Head>
 

@@ -1,0 +1,114 @@
+/* Learning.module.scss */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.textSection {
+  max-width: 1200px;
+  min-height: 20vw;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  position: relative; /* Add position relative for absolute positioning */
+}
+
+.inputSection {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; /* Add position relative for absolute positioning */
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  max-width: 77vw;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+  position: absolute; /* Add position absolute for absolute positioning */
+  bottom: -46px; /* Move the result below the input section */
+  left: 0; /* Align the result to the left */
+  width: 100%; /* Match the width of the input field */
+  display: flex;
+  justify-content: center;
+  padding: 8px 0; /* Add padding to the result */
+  border-radius: 4px;
+}
+
+.correctAnswer {
+  color: #fff;
+  background-color: green;
+}
+
+.incorrectAnswer {
+  color: #fff;
+  background-color: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contentSection {
+    margin: 2rem;
+}
+

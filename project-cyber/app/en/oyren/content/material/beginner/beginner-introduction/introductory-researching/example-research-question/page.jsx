@@ -10,22 +10,22 @@
   const questions = [
     {
       question: "In the Burp Suite Program that ships with Kali Linux, what mode would you use to manually send a request (often repeating a captured request numerous times)?",
-      correctAnswer: "repeater",
+      correctAnswer: "",
       hint: 'Search for => manually send request burp suite',
     },
     {
       question: "What hash format are modern Windows login passwords stored in?",
-      correctAnswer: "NTLM",
+      correctAnswer: "",
       hint: 'Search for => hashing algorithm for windows',
     },
     {
       question: "What are automated tasks called in Linux?",
-      correctAnswer: "cron jobs",
+      correctAnswer: "",
       hint: 'Search for => automated tasks Linux',
     },
     {
       question: "What number base could you use as a shorthand for base 2 (binary)?",
-      correctAnswer: "base 16",
+      correctAnswer: "",
       hint: 'Octal (base 8) is not the correct answer.',
     },
     {
@@ -77,7 +77,7 @@
     return (
       <div className={styles.container}>
         <Head>
-          <title>Example Research Question</title>
+          <title>Learning Page</title>
           <meta name="description" content="Learning Page for Learners" />
         </Head>
 

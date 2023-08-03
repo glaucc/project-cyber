@@ -29,7 +29,7 @@ const Learning = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Final Thoughts</title>
+        <title>Learning Page</title>
         <meta name="description" content="Learning Page for Learners" />
       </Head>
 
