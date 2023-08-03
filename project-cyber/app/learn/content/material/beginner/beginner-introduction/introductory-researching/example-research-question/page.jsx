@@ -6,13 +6,13 @@
   import Head from "next/head";
   import styles from "./Learning.module.scss";
   import Image from "next/image";
-  import search from '../../../../../../../../public/beginner/google-search.png';
-  import search2 from '../../../../../../../../public/beginner/google-search2.png';
-  import search3 from '../../../../../../../../public/beginner/google-search3.png';
-  import search4 from '../../../../../../../../public/beginner/google-search4.png';
-  import search5 from '../../../../../../../../public/beginner/google-search5.png';
-  import command from '../../../../../../../../public/beginner/command-implementation.png';
-  import command2 from '../../../../../../../../public/beginner/command2.png';
+  import search from '../../../../../../../../public/static/google-search.png';
+  import search2 from '../../../../../../../../public/static/google-search2.png';
+  import search3 from '../../../../../../../../public/static/google-search3.png';
+  import search4 from '../../../../../../../../public/static/google-search4.png';
+  import search5 from '../../../../../../../../public/static/google-search5.png';
+  import command from '../../../../../../../../public/static/command-implementation.png';
+  import command2 from '../../../../../../../../public/static/command2.png';
 
   const questions = [
     {
