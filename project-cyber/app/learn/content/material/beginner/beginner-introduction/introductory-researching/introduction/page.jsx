@@ -5,7 +5,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "./Learning.module.scss";
-import { Link } from "react-scroll";
 
 const Learning = () => {
   const [answer, setAnswer] = useState("");

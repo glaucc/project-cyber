@@ -6,13 +6,13 @@
   import Head from "next/head";
   import styles from "./Learning.module.scss";
   import Image from "next/image";
-  import search from '../../../../../../../../public/static/google-search.png';
-  import search2 from '../../../../../../../../public/static/google-search2.png';
-  import search3 from '../../../../../../../../public/static/google-search3.png';
-  import search4 from '../../../../../../../../public/static/google-search4.png';
-  import search5 from '../../../../../../../../public/static/google-search5.png';
-  import command from '../../../../../../../../public/static/command-implementation.png';
-  import command2 from '../../../../../../../../public/static/command2.png';
+  // import search from '../../../../../../../../public/static/google-search.png';
+  // import search2 from '../../../../../../../../public/static/google-search2.png';
+  // import search3 from '../../../../../../../../public/static/google-search3.png';
+  // import search4 from '../../../../../../../../public/static/google-search4.png';
+  // import search5 from '../../../../../../../../public/static/google-search5.png';
+  // import command from '../../../../../../../../public/static/command-implementation.png';
+  // import command2 from '../../../../../../../../public/static/command2.png';
 
   const questions = [
     {
@@ -99,7 +99,7 @@
               Let's say you've downloaded a JPEG image from a remote server. You suspect that there's something hidden inside it, but how can you get it out?
   How about we start by searching for “hiding things inside images” in Google:
               </p><br />
-              <Image src={search} width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image src='/static/google-search.png' width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br /> 
               <p>
               Notice that the second link down gives us the title of a technique: “Steganography”. You can then click that link and read the document, which will teach you how files are hidden inside images.
@@ -108,34 +108,34 @@
               <p>
               Ok, so we know how it's done, let's try searching for a way to extract files using steganography:
               </p><br />
-              <Image src={search2} width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image src='/static/google-search2.png' width={771} height={476} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>
               Already virtually every link is pointing to something useful. The first link contains a collection of useful tools, the second is more instructions on how to perform steganography in the first place. Realistically any of these links could prove useful, but let's take a look at that first one <a target="_blank" href='https://0xrick.github.io/lists/stego/'>(https://0xrick.github.io/lists/stego/)</a>:
 
               </p>
               <br />
-              <Image src={search3} width={850} height={400} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image src='/static/google-search3.png' width={850} height={400} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <p>
               The very first tool there looks to be useful. It can be used to extract embedded data from JPEG files -- exactly what we need it to do! This page also tells you that steghide can be installed using something called “apt”.
               </p><p>Let's search that up next!</p>
               <br />
-              <Image src={search4} width={750} height={550} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image src='/static/google-search4.png' width={750} height={550} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>Great -- so apt is a package manager that lets us install tools on Linux distributions like Ubuntu (or Kali!).</p><p>
   How can we install packages using apt? Let's search it!</p>
               <br />
-              <Image src={search5} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image width={879} height={653} src='/static/google-search5.png' alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br />
               <p>Perfect -- right at the top of the page we're given instructions. We know that our package is called steghide, so we can go ahead and install that:
   </p>
   <br></br>
-              <Image src={command} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image width={898} height={357} src='/static/command-implementation.png' alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br></br>
               <p>Now, let's switch back to that collection of steganography tools we were looking at before. Did you notice that there were instructions on how to use steghide right there?
   </p>
     `         <br></br>
-              <Image src={command2} alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
+              <Image width={806} height={102} src='/static/command2.png' alt="bruto-free-online-cybersecurity-learning-platform-google-search"></Image>
               <br></br>
 
   <p>There we go! That's how we can extract an image from a file. Our research has paid off and we can now go and complete the task.
