@@ -5,11 +5,12 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "./Learning.module.scss";
+import { Link } from "react-scroll";
 
 const Learning = () => {
   const [answer, setAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
-  const correctAnswer = "penetration tester"; // Replace with the correct answer
+  const correctAnswer = ""; // Replace with the correct answer
 
   const handleInputChange = (e) => {
     setAnswer(e.target.value);
@@ -35,40 +36,42 @@ const Learning = () => {
       <main className={styles.main}>
         <div className={styles.textSection}>
           <div className={styles.contentSection}>
-            <h1 className={styles.heading}>Offensive Security</h1>
+            <h1 className={styles.heading}>Introduction</h1>
             <p>
-              The first large area within Cyber Security is the offensive side. This area involves attacking different applications and technologies to discover vulnerabilities.
-            </p><br />
-            <p>
-              This career is for you if:
-            </p><br />
-            <ul>
-              <li>&emsp;you enjoy understanding how things work</li>
-              <li>&emsp;you are analytical</li>
-              <li>&emsp;you like thinking out of the box</li>
-            </ul>
+            Without a doubt, the ability to research effectively is the most important quality for a hacker to have. By its very nature, hacking requires a vast knowledge base — because how are you supposed to break into something if you don't know how it works? The thing is: no one knows everything. Everyone (professional or amateur, experienced or totally new to the subject) will encounter problems which they don't automatically know how to solve. This is where research comes in, as, in the real world, you can't ever expect to simply be handed the answers to your questions.            
+
+</p>
             <br />
             <p>
-              The most common offensive security job role is a penetration tester. A penetration tester is an individual that is legally employed by an organisation to find vulnerabilities in their products. A penetration tester usually requires a broad range of knowledge including:
-            </p><br />
-            <ul>
-              <li>&emsp;web application security</li>
-              <li>&emsp;network security</li>
-              <li>&emsp;use of programming languages to write various scripts</li>
-            </ul>
-            <br />
-            <p>
-              More recently, cloud security has also been gaining popularity as various organisations are now shifting their infrastructure to cloud providers such as AWS and Azure.
+            As your experience level increases, you will find that the things you're researching scale in their difficulty accordingly; however, in the field of information security, there will never come a point where you don't need to look things up.
+  
             </p>
             <br />
-            <p>It's also possible to have a speciality in one of these topics, however a broad knowledge is the best way to start out.
-            </p><br />
+            <p>This room will serve as a brief overview of some of the most important resources available to you, and will hopefully aid you in the process of building a research methodology that works for you.
+</p>
+<br />
+<p>We will be looking at the following topics:
+</p>
+<br />
+              
+              <ul>
+              <li>&emsp;An example of a research question</li>
+              <li>&emsp;Vulnerability Searching tools</li>
+              <li>&emsp;Linux Manual Pages</li>
+            </ul>
+            <br />
+            <p>
+            Let's begin.
+            </p>
+            <br />
+
+            
           </div>
         </div>
 
         <div className={styles.inputSection}>
           <h2 className={styles.subHeading}>Question:</h2>
-          <p>What is the name of the career role that is legally employed to find vulnerabilities in applications?
+          <p>Read the Introduction
           </p>
           <form onSubmit={handleSubmit}>
             <input
@@ -76,7 +79,7 @@ const Learning = () => {
               type="text"
               value={answer}
               onChange={handleInputChange}
-              placeholder="Your answer"
+              placeholder="No answer needed"
             />
             <button type="button" className={styles.submitButton} onClick={handleCheckAnswer}>Check Answer</button>
           </form>

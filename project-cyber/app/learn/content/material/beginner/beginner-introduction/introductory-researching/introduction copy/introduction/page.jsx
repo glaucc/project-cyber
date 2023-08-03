@@ -36,7 +36,7 @@ const Learning = () => {
       <main className={styles.main}>
         <div className={styles.textSection}>
           <div className={styles.contentSection}>
-            <h1 className={styles.heading}>Defensive Security</h1>
+            <h1 className={styles.heading}>Learning Page</h1>
             <p>
             This is the second major area within Security. While Offensive Security involves actively finding vulnerabilities and misconfigurations within technologies, Defensive Security involves detecting and stopping these attacks.            </p><br />
             <p>

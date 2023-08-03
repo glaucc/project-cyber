@@ -7,7 +7,7 @@ const Beginner = () => {
       <h1 className={styles.beginnerHeader}>Beginner Path</h1>
       <div className={styles.links}>
         {/* Clickable elements */}
-        <Link href="/learn/content/material/beginner/beginner-introduction/starting-out">
+        <Link href="/learn/content/material/beginner/beginner-introduction">
           <a className={styles.link}>Beginner Introduction</a>
         </Link>
         <Link href="/paths/content/beginner/junior-pentester">
