@@ -3,16 +3,16 @@ import Link from "next/link";
 
 
 import styles from "../../styles/Paths.module.scss";
-import beginner from '../../public/path-images/egyptian-using-computer.PNG'
-import presecurity from '../../public/path-images/computer.PNG'
-import pentester from '../../public/path-images/pentester.PNG'
-import pentesting from '../../public/path-images/boxing.PNG'
-import redteaming from '../../public/path-images/red-superman.PNG'
-import soc from '../../public/path-images/soc.PNG'
-import cyberdefense from '../../public/path-images/robot-playing-chess.PNG'
-import web from '../../public/path-images/web.PNG'
-import bugbounty from '../../public/path-images/bugbounty.PNG'
-import forensics from '../../public/path-images/for.PNG'
+import beginner from '../../public/static/path-images/egyptian-using-computer.PNG'
+import presecurity from '../../public/static/path-images/computer.PNG'
+import pentester from '../../public/static/path-images/pentester.PNG'
+import pentesting from '../../public/static/path-images/boxing.PNG'
+import redteaming from '../../public/static/path-images/red-superman.PNG'
+import soc from '../../public/static/path-images/soc.PNG'
+import cyberdefense from '../../public/static/path-images/robot-playing-chess.PNG'
+import web from '../../public/static/path-images/web.PNG'
+import bugbounty from '../../public/static/path-images/bugbounty.PNG'
+import forensics from '../../public/static/path-images/for.PNG'
 
 
 const Paths = () => {

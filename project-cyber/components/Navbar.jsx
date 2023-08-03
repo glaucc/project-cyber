@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 
 import Link from "next/link";
-import Logo from '../public/bruto.jpg';
+import Logo from '../public/static/bruto.jpg';
 import '../styles/navbar.css';
 
 // Styled component for the logo image
