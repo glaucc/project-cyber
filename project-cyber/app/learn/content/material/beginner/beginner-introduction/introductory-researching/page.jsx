@@ -13,13 +13,13 @@ const Beginner = () => {
         <Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/example-research-question">
           <a className={styles.link}>Example Research Question</a>
         </Link>
-        <Link href="/learn/content/material/beginner/beginner-introduction/starting-out/introductory-researching/vulnerability-searching">
+        <Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/vulnerability-searching">
           <a className={styles.link}>Vulnerability Searching</a>
         </Link>
-        <Link href="/learn/content/material/beginner/beginner-introduction/starting-out/introductory-researching/manual-pages">
+        <Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/manual-pages">
           <a className={styles.link}>Manual Pages</a>
         </Link>
-        <Link href="/learn/content/material/beginner/beginner-introduction/starting-out/introductory-researching/final-thoughts">
+        <Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/final-thoughts">
           <a className={styles.link}>Final Thoughts</a>
         </Link>
         
