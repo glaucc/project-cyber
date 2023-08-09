@@ -29,18 +29,20 @@ const Learning = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Learning Page</title>
-        <meta name="description" content="Learning Page for Learners" />
+        <title>Manual Pages</title>
+        <meta name="description" content="Manual Page, Learning Page for Learners" />
       </Head>
 
       <main className={styles.main}>
         <div className={styles.textSection}>
           <div className={styles.contentSection}>
-            <h1 className={styles.heading}>Learning Page</h1>
+            <h1 className={styles.heading}>Manual Pages</h1>
             <p>
-            This is the second major area within Security. While Offensive Security involves actively finding vulnerabilities and misconfigurations within technologies, Defensive Security involves detecting and stopping these attacks.            </p><br />
+            If you haven't already worked in Linux, take a look at the Linux Fundamentals module. Linux (usually Kali Linux) is without a doubt the most ubiquitous operating system used in hacking, so it pays to be familiar with it!
+
+</p><br />
             <p>
-            This career track is for you if:
+            One of the many useful features of Linux is the inbuilt <code>man</code> command, which gives you access to the manual pages for most tools directly inside your terminal. Occasionally you'll find a tool that doesn't have a manual entry; however, this is rare. Generally speaking, when you don't know how to use a tool, <code>man</code> should be your first port of call.
             </p><br />
             <ul>
               <li>&emsp;you are analytical</li>
