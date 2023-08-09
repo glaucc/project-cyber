@@ -2,30 +2,30 @@
 
 .terminalContainer {
   width: 100%;
-  max-width: 1200px;
-  height: 20vw;
-  margin: -15rem 0rem 0rem -2rem;
-  padding: 20px;
+  max-width: 71.875rem; /* Adjust this value as needed */
+  padding: 1.2rem;
   background-color: #000;
   border: 1px solid #666;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-end;
-
-  /* Set the container to have a column layout */
+  margin-top: -1rem; /* Adjust this value to position the terminal at the desired distance from the top */
+  min-height: 40rem; /* Adjust this value to set a minimum height for the terminal */
+  // max-height: 50rem;
 }
+
 
 .output {
   background-color: #111;
   padding: 10px;
   border-radius: 4px;
-  // margin-top: auto; /* Use 'auto' to push the output to the bottom */
   white-space: pre-wrap;
   font-family: "Courier New", monospace;
   font-size: 14px;
-  color: #00ff00; /* Set the default output text color to green (#00ff00) */
+  color: #00ff00;
+  overflow-y: auto;
+  flex-grow: 1; /* Allow the output to grow and take available vertical space */
 }
 
 .typingText {
