@@ -8,7 +8,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./ForgotPasswordPage.module.scss";
-import ConfirmationPopup from "../../../components/ConfirmationPopup";
+import ConfirmationPopup from "../../../components/ConfirmationPopupAz";
 
 const ForgotPasswordPage = () => {
   const [email, setEmail] = useState("");

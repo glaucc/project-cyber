@@ -24,7 +24,7 @@ const ConfirmationPopup = ({ onClose }) => {
         <div className={styles["icon-container"]}>
           {/* Your first SVG icon goes here */}
         </div>
-        <p className="popup-text" style={{ fontWeight: 'bold' }}>Reset password link has been sent to your email</p>
+        <p className="popup-text" style={{ fontWeight: 'bold' }}>Parolun sıfırlanması linki e-poçtunuza göndərildi</p>
         <div className={styles["creative-icon-container"]} className='postsvg'>
           {/* Your creative SVG icon goes here */}
           <object width={400} height={400} type="image/svg+xml" data="https://cdn.svgator.com/images/2023/03/message-delivered-to-mailbox-animation.svg" alt="Animated mail that flies and arrives at the mailbox" img width="100%">
