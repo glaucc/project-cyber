@@ -78,7 +78,7 @@ const FeaturedCourses = () => {
     {
       id: 3,
       link: '/az/learn/content/soc1',
-      title: "Təhlükəsizlik Əməliyyatları Mərkəzi",
+      title: "Təhlükəsizlik Əməliyyatları Mərkəzi (SOC)",
       description: "Kibertəhlükələrdən qorunmaq üçün güclü müdafiə və insidentlərə cavab bacarıqlarının necə qurulacağını anlayın.",
     },
   ];

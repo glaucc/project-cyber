@@ -47,7 +47,7 @@ const CtaButton = styled.a`
 const CallToAction = () => {
   return (
     <CtaContainer>
-      <CtaTitle>Elə Bu gün kibertəhlükəsizlik səyahətinizə başla!</CtaTitle>
+      <CtaTitle>Elə Bu gün kibertəhlükəsizlik səyahətinə başla!</CtaTitle>
       <CtaDescription>
       Onlayn öyrənmə platformamıza qoşulun və rəqəmsal dünyada özünüzü və başqalarını qorumaq üçün bacarıqlar əldə edin.
       </CtaDescription>
