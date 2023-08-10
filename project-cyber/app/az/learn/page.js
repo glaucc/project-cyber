@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 
 const LearnPage = dynamic(
-  () => import('../../components/CybersecurityTopics'),
+  () => import('../../../components/CybersecurityTopics'),
   { ssr: false }
 )
 
