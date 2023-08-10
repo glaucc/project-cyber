@@ -1,6 +1,6 @@
 'use client';
 
-import Quiz from "../../../../components/Quiz";
+import Quiz from "../../../../../components/Quiz";
 
 const LearningPage = () => {
   return (
