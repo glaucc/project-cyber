@@ -1,0 +1,292 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* globals.css */
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+/* Other global styles or CSS resets can go here */
+
+/* Apply the Inter font to the body element or specific elements */
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+
+/* Reset styles for consistent rendering */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  // font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Global styles */
+body {
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.6;
+  min-width: 60vw;
+  max-width: 100%;
+}
+
+.navbar-container {
+  max-width: 100vw;
+}
+
+.ContentContainer {
+  display: flex;
+  max-width: 1200px;
+  padding: 20px;
+  // background-color: black;
+  flex-direction: column;
+
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .navbar-container {
+    max-width: 100vw;
+  }
+
+  // .ContentContainer {
+  //   margin-left: 5vw;
+  // }
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1430px)  {
+  
+  .ContentContainer {
+    margin-left: 5vw;
+  }
+
+}
+
+
+// @media only screen and (width: 768px) {
+
+//   .ContentContainer {
+//     margin-left: -15vw !important;
+//   }
+
+// }
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Add more global styles as needed */
+
+/* Animations and Transitions */
+/* Example: Smooth fade-in animation for elements with the 'fadeIn' class */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  background-color: #fff;
+  justify-content: space-between;
+  min-height: 100vw;
+  flex-direction: column;
+
+
+  /* overflow: hidden; */
+}
+
+.gradient-element {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(45deg, #f72585, #7209b7, #3a0ca3, #4361ee, #4cc9f0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.notificationh1 {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.eLIgcY {
+  font-size: 1.2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .navitems {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navitemss {
+    font-size: 1.8rem !important;
+  }
+
+}
+
+@media only screen and (max-width: 490px) {
+  .ctabtn {
+    font-size: 1rem !important;
+    font-weight: bold;
+    max-width: 100%;
+  }
+
+}
+
+.ctabtn {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .homebtn {
+    font-size: 1.7rem !important;
+    font-weight: bold;
+    max-width: 100%;
+    margin-left: -18rem;
+  }
+}
+
+.homebtn {
+  font-weight: bold;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .homebtn {
+    // font-size: 1.7rem !important;
+    // font-weight: bold;
+    max-width: 100%;
+    margin-left: -28rem;
+  }
+}
+
+// .navitemss {
+//   font-weight: ;
+// }

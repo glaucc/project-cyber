@@ -1,14 +1,11 @@
 'use client'
 
 import styled, { keyframes } from "styled-components";
-import React from "react";
 import { createGlobalStyle } from "styled-components";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
 import './globals.scss'
 
-import { ThemeProvider, useTheme, darkTheme } from "../components/ThemeContext";
 
 
 
@@ -57,21 +54,16 @@ body {
 
 
 const RootLayout = ({ children }) => {
-  console.log(2)
 
   
-  const { theme } = useTheme();
   // Create a GlobalStyle component to apply the Inter font globally
     
     
-    console.log(3)
     // style={{scrollBehavior:'smooth'}
     return (
     <html lang="en">
       <body>
-        <ThemeProvider style={theme}>
           <GlobalStyle />
-          <Navbar />
           {/* <ContentContainer> */}
           <div className="ContentContainer">
             {children}
@@ -79,7 +71,6 @@ const RootLayout = ({ children }) => {
           </div>
           {/* </ContentContainer> */}
           <Footer />
-        </ThemeProvider>
       </body>
     </html>
   );

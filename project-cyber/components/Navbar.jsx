@@ -43,18 +43,20 @@ const Navbar = () => {
         <Link href="/learn/content/career-quiz">
           <div className="nav-item navitemss">Career Quiz</div>
         </Link>
+        <Link href="/shop">
+          <div className="nav-item navitemss">Shop</div>
+        </Link>
         <Link href="/login">
           <div className="nav-item navitemss">Login</div>
         </Link>
         <Link href="/signup">
           <div className="nav-item navitemss">Sign Up</div>
         </Link>
-        <Link href="/shop">
-          <div className="nav-item navitemss">Shop</div>
-        </Link>
+        <Link href="/az">
         <div className="nav-item navitemss">
           Language
         </div>
+        </Link>
       </div>
     </div>
   );

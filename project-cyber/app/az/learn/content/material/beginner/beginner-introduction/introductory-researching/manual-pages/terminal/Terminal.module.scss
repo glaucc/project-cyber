@@ -1,0 +1,61 @@
+/* Terminal.module.scss */
+
+.terminalContainer {
+  width: 100%;
+  max-width: 71.875rem; /* Adjust this value as needed */
+  padding: 1.2rem;
+  background-color: #000;
+  border: 1px solid #666;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: -1rem; /* Adjust this value to position the terminal at the desired distance from the top */
+  min-height: 40rem; /* Adjust this value to set a minimum height for the terminal */
+  // max-height: 50rem;
+}
+
+
+.output {
+  background-color: #111;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #00ff00;
+  overflow-y: auto;
+  flex-grow: 1; /* Allow the output to grow and take available vertical space */
+}
+
+.typingText {
+  color: #00ff00;
+  font-weight: bold; /* Set the typing text color to green (#00ff00) */
+}
+
+.inputForm {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #111;
+  border-radius: 4px;
+  margin-top: 0px; /* Add space between output and input */
+}
+
+.terminalSymbol {
+  color: #00ff00; /* Set the terminal symbol color to green (#00ff00) */
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.inputPlace {
+  flex: 1;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #00ff00; /* Set the input text color to green (#00ff00) */
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.textSection {
+  max-width: 1200px;
+  min-height: 20vw;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.inputSection {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  max-width: 77vw;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease;
+  // position: absolute;
+  bottom: -46px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+.correctAnswer {
+  color: #fff;
+  background-color: green;
+}
+
+.incorrectAnswer {
+  color: #fff;
+  background-color: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contentSection {
+  margin: 2rem;
+}
+
+.buttonHint {
+  cursor: pointer;
+  background-color: transparent; /* Transparent background */
+  color: #ffcc80; /* Faded orange color */
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem; /* Increased width */
+  font-size: 16px;
+  margin-right: 1rem;
+  margin-bottom: 0.1rem; /* Added margin at the bottom */
+  transition: background-color 0.2s ease;
+  height: 32px; /* Decreased height */
+  display: flex;
+  align-items: center; /* Align the text with the button */
+}
+
+.buttonHint:hover {
+  background-color: rgba(255, 188, 64, 0.8); /* Faded orange color with alpha value for transparency on hover */
+}
+
+
+/* Add animation for fading in the hint */
+@keyframes fadeInHint {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hintContainer {
+  display: flex;
+  align-items: center;
+  animation: fadeInHint 0.3s ease;
+  margin-top: 0.5rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.hintText {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.showHint {
+  opacity: 1;
+}

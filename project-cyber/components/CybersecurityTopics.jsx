@@ -3,7 +3,8 @@ import styled from "styled-components";
 import topicsData from "../data/learn.json";
 import quotesData from "../data/quotes.json";
 import Link from "next/link";
-
+import Navbar from "@/components/Navbar";
+import '../styles/navbar.css';
 
 
 import "../styles/learn.scss";
@@ -42,6 +43,8 @@ const LearnPage = () => {
 
   return (
     <>
+          <Navbar />
+
     <div className="learn-container">
 
       <div className="quote-header">

@@ -6,6 +6,8 @@ import CallToAction from "../components/CallToAction";
 import FeaturedPaths from "../components/FeaturedPaths";
 import Testimonials from "../components/Testimonials";
 import './globals.scss';
+import Navbar from "@/components/Navbar";
+
 
 
 const fadeInUpAnimation = keyframes`
@@ -45,7 +47,8 @@ const GapDiv = styled.div`
 const Home = () => {
   return (<>
       <>
-      
+      <Navbar />
+
       <NotificationH1>Welcome to our Online Cybersecurity Learning Platform 👋</NotificationH1>
       {/* Other content of your homepage goes here */}
       {/* <div class="gradient-element"></div> */}

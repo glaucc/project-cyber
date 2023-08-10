@@ -1,0 +1,33 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -20vw;
+  }
+  
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .link {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+.beginnerHeader {
+    margin: -5rem 0vw 5vw 31rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
