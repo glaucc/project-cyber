@@ -139,8 +139,10 @@ Say we want to connect to a remote computer using SSH, but we don't know the syn
 
 {/* Terminal */}
 <div className={styles.buttonContainer}>
-<Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/manual-pages/terminal">
-          <a className={styles.buttonContainer}>
+
+
+<Link href="/learn/content/material/beginner/beginner-introduction/introductory-researching/manual-pages/terminal" passHref>
+          <a target="_blank" rel="noopener noreferrer" className={styles.buttonContainer}>
             Open Terminal
           </a>
         </Link>
