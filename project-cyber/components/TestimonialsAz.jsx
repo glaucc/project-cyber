@@ -49,24 +49,24 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      author: "John Doe",
-      text: "This platform helped me enhance my cybersecurity skills. The courses were comprehensive, and the hands-on labs were fantastic. I highly recommend it!",
+      author: "A. Yusifova",
+      text: "Bu platforma mənə kibertəhlükəsizlik bacarıqlarımı inkişaf etdirməyə kömək etdi. Kurslar hərtərəfli idi və ən önəmlisi Azərbaycanca olması mənim üçün xüsusilə super idi. Hərkəsə tövsiyyə edirəm.",
     },
     {
       id: 2,
-      author: "Jane Smith",
-      text: "I'm impressed with the quality of content and the expertise of the instructors. The interactive learning environment made the learning process enjoyable.",
+      author: "J. Seymurzadə",
+      text: "Məzmun keyfiyyətindən və müəllimlərin təcrübəsindən heyranam. İnteraktiv təlim mühiti tədris prosesini zövqlü etdi. Fikrimcə Azərbaycanlı bir gənc üçün əvəzedilməz resursdur.",
     },
     {
       id: 3,
-      author: "Mike Johnson",
-      text: "The learning paths were well-structured and helped me progress from a beginner to an intermediate level. Thank you for this amazing platform!",
+      author: "M. Cabbarov",
+      text: "Öyrənmə yolları yaxşı qurulmuşdu və sadəliyi mənə başlanğıcdan orta səviyyəyə keçməyə asanlıqla imkan verdi. Bu heyrətamiz platforma üçün təşəkkür edirəm.",
     },
   ];
 
   return (
     <TestimonialsContainer>
-      <TestimonialsTitle>What Our Students Say</TestimonialsTitle>
+      <TestimonialsTitle>Tələbələrimizin Dedikləri</TestimonialsTitle>
       <TestimonialGrid>
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id}>

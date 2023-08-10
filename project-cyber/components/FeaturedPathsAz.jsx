@@ -64,24 +64,24 @@ const FeaturedPaths = () => {
   const featuredPaths = [
     {
       id: 1,
-      title: "Offensive Pentesting",
-      description: "This path focuses on advanced offensive security techniques and penetration testing methodologies.",
+      title: "Hücumedici Pentestinq",
+      description: "Bu yol qabaqcıl hücum təhlükəsizlik texnikalarına və pentest metodologiyalarına diqqət yetirir.",
     },
     {
       id: 2,
-      title: "Cyber Defense",
-      description: "Cyber Defense path focuses on building strong defenses and incident response skills to protect against cyber threats.",
+      title: "Kiber Müdafiə",
+      description: "Kiber Müdafiə yolu kibertəhlükələrdən qorunmaq üçün güclü müdafiə və insidentlərə cavab vermə bacarıqlarının yaradılmasına diqqət yetirir.",
     },
     {
       id: 3,
-      title: "Red Teaming",
-      description: "Red Teaming path is for cybersecurity professionals who want to simulate real-world cyber attacks and improve defenses.",
+      title: "Qırmızı Komanda",
+      description: "Qırmızı Komanda yolu real dünyada kiberhücumları simulyasiya etmək və müdafiəni təkmilləşdirmək istəyən kibertəhlükəsizlik peşəkarları üçündür.",
     },
   ];
 
   return (
     <FeaturedPathsContainer>
-      <FeaturedPathsTitle>Featured Learning Paths</FeaturedPathsTitle>
+      <FeaturedPathsTitle>Seçilmiş Öyrənmə Yolları</FeaturedPathsTitle>
       <PathGrid>
         {featuredPaths.map((path) => (
           <PathCard key={path.id}>

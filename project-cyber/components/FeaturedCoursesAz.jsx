@@ -65,33 +65,33 @@ const FeaturedCourses = () => {
   const courses = [
     {
       id: 1,
-      link: '/learn/content/beginner',
-      title: "Cybersecurity Fundamentals",
-      description: "Learn the basics of cybersecurity and essential security concepts.",
+      link: '/az/learn/content/beginner',
+      title: "Kibertəhlükəsizliyin əsasları",
+      description: "Kibertəhlükəsizliyin əsaslarını və əsas təhlükəsizlik anlayışlarını öyrənin.",
     },
     {
       id: 2,
-      link: '/learn/content/jnrpentester',
-      title: "Ethical Hacking",
-      description: "Explore ethical hacking techniques and penetration testing.",
+      link: '/az/learn/content/jnrpentester',
+      title: "Etik Haking",
+      description: "Etik hakerlik üsullarını və pentesti araşdırın.",
     },
     {
       id: 3,
-      link: '/learn/content/soc1',
-      title: "Security Operations Center",
-      description: "Understand how to build strong defenses and incident response skills to protect against cyber threats.",
+      link: '/az/learn/content/soc1',
+      title: "Təhlükəsizlik Əməliyyatları Mərkəzi",
+      description: "Kibertəhlükələrdən qorunmaq üçün güclü müdafiə və insidentlərə cavab bacarıqlarının necə qurulacağını anlayın.",
     },
   ];
 
   return (
     <CoursesContainer>
-      <CoursesTitle>Featured Courses</CoursesTitle>
+      <CoursesTitle>Seçilmiş Kurslar</CoursesTitle>
       <CourseGrid>
         {courses.map((course) => (
           <CourseCard key={course.id}>
             <CourseTitle>{course.title}</CourseTitle>
             <CourseDescription>{course.description}</CourseDescription>
-            <CourseButton href={course.link}>Start Learning</CourseButton>
+            <CourseButton href={course.link}>Öyrənməyə başla</CourseButton>
           </CourseCard>
         ))}
       </CourseGrid>

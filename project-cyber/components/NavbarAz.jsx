@@ -48,7 +48,7 @@ const NavbarAz = () => {
         <div className="nav-item navitemss">
             Dil
         </div>
-          </Link> {/* Replace with the actual link */}
+          </Link>
       </div>
     </div>
   );

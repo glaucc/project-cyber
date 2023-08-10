@@ -47,7 +47,7 @@ const Home = () => {
   return (<>
       <>
       <Navbar />
-      <NotificationH1>Welcome to our Online Cybersecurity Learning Platform 👋</NotificationH1>
+      <NotificationH1>Onlayn Kibertəhlükəsizlik Öyrənmə Platformamıza xoş gəlmisiniz 👋</NotificationH1>
       {/* Other content of your homepage goes here */}
       {/* <div class="gradient-element"></div> */}
       <GapDiv>

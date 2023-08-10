@@ -47,13 +47,12 @@ const CtaButton = styled.a`
 const CallToAction = () => {
   return (
     <CtaContainer>
-      <CtaTitle>Start Your Cybersecurity Journey Today!</CtaTitle>
+      <CtaTitle>Elə Bu gün kibertəhlükəsizlik səyahətinizə başla!</CtaTitle>
       <CtaDescription>
-        Join our online learning platform and gain the skills to protect yourself
-        and others in the digital world.
+      Onlayn öyrənmə platformamıza qoşulun və rəqəmsal dünyada özünüzü və başqalarını qorumaq üçün bacarıqlar əldə edin.
       </CtaDescription>
       <Link href='/signup'>
-      <CtaButton className="ctabtn">Get Started for Free</CtaButton>
+      <CtaButton className="ctabtn">Pulsuz Başla</CtaButton>
       </Link>
     </CtaContainer>
   );
