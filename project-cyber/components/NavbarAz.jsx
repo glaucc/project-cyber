@@ -46,7 +46,7 @@ const NavbarAz = () => {
         </Link>
           <Link href="/">
         <div className="nav-item navitemss">
-            Dil
+            Dil En
         </div>
           </Link>
       </div>

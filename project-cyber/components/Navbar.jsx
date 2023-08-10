@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
         <Link href="/az">
         <div className="nav-item navitemss">
-          Language
+          Language AZ
         </div>
         </Link>
       </div>
