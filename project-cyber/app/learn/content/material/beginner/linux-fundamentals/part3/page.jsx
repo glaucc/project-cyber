@@ -73,14 +73,14 @@
     return (
       <div className={styles.container}>
         <Head>
-          <title>Manual Pages</title>
-          <meta name="description" content="Manual Pages for Learners" />
+          <title>Linux Part 3</title>
+          <meta name="description" content="Linux Part 3 Learning Page for Learners" />
         </Head>
 
         <main className={styles.main}>
           <div className={styles.textSection}>
             <div className={styles.contentSection}>
-              <h1 className={styles.heading}>Manual Pages</h1>
+              <h1 className={styles.heading}>Linux Part 3</h1>
               <p>
               If you haven't already worked in Linux, take a look at the <Link href='/learn/content/material/beginner/linux-fundamentals'>Linux Fundamentals</Link> module. Linux (usually Kali Linux) is without a doubt the most ubiquitous operating system used in hacking, so it pays to be familiar with it!
               </p><br />

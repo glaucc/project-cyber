@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import topicsData from "../data/learn.json";
-import quotesData from "../data/quotes.json";
+import topicsData from "../data/learn_az.json";
+import quotesData from "../data/quotes_az.json";
 import Link from "next/link";
 
 
 
 import "../styles/learn.scss";
+import NavbarAz from "./NavbarAz";
 
 const TopicContainer = styled.div`
   margin: 10px;
@@ -42,6 +43,7 @@ const LearnPage = () => {
 
   return (
     <>
+    <NavbarAz />
     <div className="learn-container">
 
       <div className="quote-header">
@@ -82,9 +84,9 @@ const LearnPage = () => {
         ))}
       </div>
 
-      <Link href="/paths">
+      <Link href="/az/paths">
         <div className="learn-btn-container">
-          <span>Browse Career Paths</span>
+          <span>Karyera yollarını nəzərdən keçir</span>
         </div>
       </Link>
 

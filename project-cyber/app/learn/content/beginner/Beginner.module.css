@@ -1,33 +1,90 @@
+/* Beginner.module.css */
+
 .container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-top: -20vw;
-  }
-  
-  .links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  
-  .link {
-    display: block;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .link:hover {
-    background-color: #f0f0f0;
-  }
-  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .beginnerHeader {
-    margin: -5rem 0vw 5vw 31rem;
-    font-weight: bold;
-    font-size: 1.7rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.link:hover::before {
+  left: 0;
+}
+
+.finishedLink {
+  background-color: #00cc00;
+  color: white;
+  pointer-events: none;
+}
+
+.progressBars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.progressBar {
+  width: 100px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 5px 0;
+  animation: progressBarAnimation 2s infinite alternate;
+}
+
+@keyframes progressBarAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+
+.finishedButton {
+  background-color: #00cc00;
 }

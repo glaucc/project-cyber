@@ -13,90 +13,92 @@ import cyberdefense from '../../../public/static/path-images/robot-playing-chess
 import web from '../../../public/static/path-images/web.PNG'
 import bugbounty from '../../../public/static/path-images/bugbounty.PNG'
 import forensics from '../../../public/static/path-images/for.PNG'
+import NavbarAz from '@/components/NavbarAz';
 
 
 const Paths = () => {
   const paths = [
     {
-      title: "Beginner",
+      title: "Başlanğıc",
       image: beginner,
-      link: '/learn/content/beginner',
+      link: '/az/learn/content/beginner',
       description:
-        "This path is for individuals who are new to the field of cybersecurity and want to explore the basics of various domains.",
+        "Bu yol kibertəhlükəsizlik sahəsində yeni olan və müxtəlif sahələrin əsaslarını araşdırmaq istəyən şəxslər üçündür.",
     },
     {
-      title: "Web Fundamentals",
+      title: "Veb əsasları",
       image: web,
-      link: '/learn/content/web',
+      link: '/az/learn/content/web',
       description:
-        "Web Fundamentals path is for those interested in web application security and secure web development.",
+        "Veb Əsasları yolu veb tətbiqi təhlükəsizliyi və təhlükəsiz veb inkişafı ilə maraqlananlar üçündür.",
     },
     
     {
-      title: "Junior Pentester",
+      title: "Kiçik Pentester",
       image: pentester,
-      link: '/learn/content/jnrpentester',
+      link: '/az/learn/content/jnrpentester',
       description:
-        "Junior Pentester path is for aspiring penetration testers who want to learn ethical hacking and security assessment techniques.",
+        "Kiçik Pentester yolu etik hakerlik və təhlükəsizliyin qiymətləndirilməsi üsullarını öyrənmək istəyən penetrasiya testçiləri üçündür.",
     },
     {
-      title: "Pre Security",
+      title: "Ön Təhlükəsizlik",
       image: presecurity,
-      link: '/learn/content/presecurity',
+      link: '/az/learn/content/presecurity',
       description:
-        "Pre Security path is designed for those who want to learn about securing systems and networks.",
+        "Ön Təhlükəsizlik yolu sistemlərin və şəbəkələrin təhlükəsizliyini öyrənmək istəyənlər üçün nəzərdə tutulmuşdur.",
     },
     {
-      title: "Offensive Pentesting",
+      title: "Hücumedici Pentestinq",
       image: pentesting,
-      link: '/learn/content/offensivepentesting',
+      link: '/az/learn/content/offensivepentesting',
       description:
-        "This path focuses on advanced offensive security techniques and penetration testing methodologies.",
+        "Bu yol qabaqcıl hücum təhlükəsizlik texnikalarına və nüfuzetmə testi metodologiyalarına diqqət yetirir.",
     },
     {
-      title: "Red Teaming",
+      title: "Qırmızı Komanda",
       image: redteaming,
-      link: '/learn/content/redteaming',
+      link: '/az/learn/content/redteaming',
       description:
-        "Red Teaming path is for cybersecurity professionals who want to simulate real-world cyber attacks and improve defenses.",
+        "Qırmızı Komanda yolu real dünyada kiberhücumları simulyasiya etmək və müdafiəni təkmilləşdirmək istəyən kibertəhlükəsizlik peşəkarları üçündür.",
     },
     {
-      title: "SOC Level 1",
+      title: "SOC Səviyyə 1",
       image: soc,
-      link: '/learn/content/soc1',
+      link: '/az/learn/content/soc1',
       description:
-        "SOC Level 1 path is designed for individuals who want to start a career in Security Operations Centers (SOCs).",
+        "Təhlükəsizlik Əməliyyatları Mərkəzlərində (SOC) karyera qurmaq istəyən şəxslər üçün nəzərdə tutulmuşdur.",
     },
     {
-      title: "Cyber Defense",
+      title: "Kiber Müdafiə",
       image: cyberdefense,
-      link: '/learn/content/cyberdefense',
+      link: '/az/learn/content/cyberdefense',
       description:
-        "Cyber Defense path focuses on building strong defenses and incident response skills to protect against cyber threats.",
+        "Kiber Müdafiə yolu kibertəhlükələrdən qorunmaq üçün güclü müdafiə və insidentlərə cavab vermə bacarıqlarının yaradılmasına diqqət yetirir.",
     },
     
     {
-      title: "Bug Bounty",
+      title: "Problem Ovçusu",
       image: bugbounty,
-      link: '/learn/content/bugbounty',
+      link: '/az/learn/content/bugbounty',
       description:
-        "Bug Bounty path is for cybersecurity enthusiasts who want to discover and report vulnerabilities in systems for rewards.",
+        "Problem Ovçusu yolu (Bug Bounty) mükafatlar üçün sistemlərdə zəiflikləri aşkar etmək və bildirmək istəyən kibertəhlükəsizlik həvəskarları üçündür.",
     },
     {
-      title: "Digital Forensics",
+      title: "Rəqəmsal Məhkəmə",
       image: forensics,
-      link: '/learn/content/digitalforensics',
+      link: '/az/learn/content/digitalforensics',
       description:
-        "Digital Forensics path is for professionals who want to investigate and analyze digital evidence for legal and investigative purposes.",
+        "Rəqəmsal Məhkəmə Yolu (Digital Forensics), hüquqi və istintaq məqsədləri üçün rəqəmsal sübutları araşdırmaq və təhlil etmək istəyən peşəkarlar üçündür.",
     },
   ];
 
   return (
   
   <>
+  <NavbarAz />
     
     <div className={styles["paths-container"]}>
-      <h1 className={styles["paths-title"]}>Career Paths in Cyber Security</h1>
+      <h1 className={styles["paths-title"]}>Kibertəhlükəsizlikdə Karyera Yolları</h1>
       <div className={styles["paths-grid"]}>
         {paths.map((path, index) => (
           <Link href={path.link}  key={index}>

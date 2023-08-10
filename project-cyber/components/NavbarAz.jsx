@@ -26,22 +26,22 @@ const NavbarAz = () => {
 
       {/* Rest of the navigation items */}
       <div className="nav-items">
-        <Link href="/learn">
+        <Link href="/az/learn">
           <div className="nav-item navitemss">Öyrən</div>
         </Link>
-        <Link href="/paths">
+        <Link href="/az/paths">
           <div className="nav-item navitemss">Karyera</div>
         </Link>
-        <Link href="/learn/content/career-quiz">
+        <Link href="/az/learn/content/career-quiz">
           <div className="nav-item navitemss">Karyera Testi</div>
         </Link>
-        <Link href="/shop">
+        <Link href="/az/shop">
           <div className="nav-item navitemss">Mağaza</div>
         </Link>
-        <Link href="/login">
+        <Link href="/az/login">
           <div className="nav-item navitemss">Daxil Ol</div>
         </Link>
-        <Link href="/signup">
+        <Link href="/az/signup">
           <div className="nav-item navitemss">Qeydiyyat</div>
         </Link>
           <Link href="/">

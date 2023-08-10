@@ -6,7 +6,7 @@ import CallToAction from "../../components/CallToActionAz";
 import FeaturedPaths from "../../components/FeaturedPathsAz";
 import Testimonials from "../../components/TestimonialsAz";
 import './globals.scss';
-import Navbar from "@/components/NavbarAz";
+import NavbarAz from "@/components/NavbarAz";
 
 
 const fadeInUpAnimation = keyframes`
@@ -46,7 +46,7 @@ const GapDiv = styled.div`
 const Home = () => {
   return (<>
       <>
-      <Navbar />
+      <NavbarAz />
       <NotificationH1>Onlayn Kibertəhlükəsizlik Öyrənmə Platformamıza xoş gəlmisiniz 👋</NotificationH1>
       {/* Other content of your homepage goes here */}
       {/* <div class="gradient-element"></div> */}

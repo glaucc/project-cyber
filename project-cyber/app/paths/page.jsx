@@ -13,6 +13,7 @@ import cyberdefense from '../../public/static/path-images/robot-playing-chess.PN
 import web from '../../public/static/path-images/web.PNG'
 import bugbounty from '../../public/static/path-images/bugbounty.PNG'
 import forensics from '../../public/static/path-images/for.PNG'
+import Navbar from '@/components/Navbar';
 
 
 const Paths = () => {
@@ -94,7 +95,7 @@ const Paths = () => {
   return (
   
   <>
-    
+    <Navbar />
     <div className={styles["paths-container"]}>
       <h1 className={styles["paths-title"]}>Career Paths in Cyber Security</h1>
       <div className={styles["paths-grid"]}>

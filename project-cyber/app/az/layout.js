@@ -70,7 +70,7 @@ const RootLayout = ({ children }) => {
 
           </div>
           {/* </ContentContainer> */}
-          <Footer />
+          {/* <Footer /> */}
       </body>
     </html>
   );
