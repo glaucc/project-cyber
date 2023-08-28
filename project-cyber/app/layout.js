@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-free/css/all.css';
 import './globals.scss'
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 
@@ -69,6 +71,8 @@ const RootLayout = ({ children }) => {
             {children}
 
           </div>
+          <Analytics />
+
           {/* </ContentContainer> */}
           {/* <Footer /> */}
       </body>
